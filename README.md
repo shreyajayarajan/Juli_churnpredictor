@@ -127,17 +127,3 @@ Applying oversampling (SMOTE) before splitting dataset creates synthetic copies 
 3. **Fallback Explainer Engine**: Implemented robust fallback logic for feature attributions so predictions succeed seamlessly even in restricted environments where SHAP native C++ dependencies differ.
 4. **Dedicated Risk Analytics Page**: Separated global risk distribution, cohort analysis, and contract risk charts into a dedicated **Risk Analytics** page accessible via the main navigation bar.
 
----
-
-## "What I'd Add With More Time" (Interview Discussion Points)
-
-1. **Model Drift & Data Quality Monitoring**: Integrate **Evidently AI** or Evidently Service to track covariate shift between serving distributions and training data over time.
-2. **Automated Retention Playbooks**: Add webhook integration with CRM tools (HubSpot/Salesforce) to automatically trigger discount offers or support agent outreach whenever a customer crosses into the **High Risk (>65%)** tier.
-3. **A/B Testing Infrastructure**: Framework to evaluate whether SHAP-guided retention offers decrease actual churn rate versus standard control offers.
-4. **Real-time Kafka / Redis Event Streaming**: Stream live telemetry events (app logins, support tickets, billing failures) to update customer churn scores continuously.
-
----
-
-## Screenshots Placeholder
-
-*(Screenshots of Welcome Page, Executive Dashboard, Dedicated Risk Analytics Page, Customer Directory Table, and SHAP Predictor Tool)*
