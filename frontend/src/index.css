@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-offwhite: #FDFBF7;
+  --color-burgundy: #800020;
+  --color-gold: #FFCE1B;
+  --color-terracotta: #A52A2A;
+  --color-rust: #BE5103;
+}
+
+body {
+  background-color: #FDFBF7;
+  color: #1A1A1A;
+  font-family: 'Lora', Georgia, serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FDFBF7;
+}
+::-webkit-scrollbar-thumb {
+  background: #800020;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #BE5103;
+}
+
+/* Clean Editorial SaaS Card */
+.juli-card {
+  background: #FFFFFF;
+  border: 1px solid #E8E5DF;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.juli-card-hover {
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.juli-card-hover:hover {
+  border-color: #800020;
+  box-shadow: 0 6px 20px rgba(128, 0, 32, 0.08);
+}
+
+/* Form Inputs */
+input:focus, select:focus, textarea:focus {
+  border-color: #800020 !important;
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(128, 0, 32, 0.15) !important;
+}
+
+/* Refined Editorial Badges */
+.badge-high {
+  background: rgba(165, 42, 42, 0.10);
+  color: #A52A2A;
+  border: 1px solid rgba(165, 42, 42, 0.35);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+.badge-medium {
+  background: rgba(255, 206, 27, 0.18);
+  color: #8A6800;
+  border: 1px solid rgba(255, 206, 27, 0.50);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+.badge-low {
+  background: rgba(128, 0, 32, 0.08);
+  color: #800020;
+  border: 1px solid rgba(128, 0, 32, 0.25);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
