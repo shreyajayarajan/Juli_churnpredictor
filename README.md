@@ -93,67 +93,7 @@ Open `http://localhost:3000` in your web browser.
 ### 1. `POST /predict`
 Evaluates a single customer profile, predicts churn probability, assigns risk tier, and extracts top 5 SHAP driver reasons.
 
-**Sample Request Body:**
-```json
-{
-  "customerID": "SIM-7590-WBEN",
-  "gender": "Female",
-  "SeniorCitizen": 0,
-  "Partner": "No",
-  "Dependents": "No",
-  "tenure": 6,
-  "PhoneService": "Yes",
-  "MultipleLines": "No",
-  "InternetService": "Fiber optic",
-  "OnlineSecurity": "No",
-  "OnlineBackup": "No",
-  "DeviceProtection": "No",
-  "TechSupport": "No",
-  "StreamingTV": "Yes",
-  "StreamingMovies": "Yes",
-  "Contract": "Month-to-month",
-  "PaperlessBilling": "Yes",
-  "PaymentMethod": "Electronic check",
-  "MonthlyCharges": 85.50,
-  "TotalCharges": 513.00,
-  "SupportCalls": 4
-}
-```
 
-**Sample Response JSON:**
-```json
-{
-  "customer_id": "SIM-7590-WBEN",
-  "churn_probability": 0.748,
-  "predicted_churn": 1,
-  "risk_tier": "High",
-  "top_reasons": [
-    {
-      "feature": "Contract_Month-to-month",
-      "clean_name": "Contract: Month-to-Month",
-      "shap_value": 0.245,
-      "abs_shap": 0.245,
-      "direction": "increases_risk",
-      "feature_value": 1.0
-    },
-    {
-      "feature": "InternetService_Fiber optic",
-      "clean_name": "Internet: Fiber Optic",
-      "shap_value": 0.182,
-      "abs_shap": 0.182,
-      "direction": "increases_risk",
-      "feature_value": 1.0
-    },
-    {
-      "feature": "SupportCalls",
-      "clean_name": "Customer Support Calls",
-      "shap_value": 0.124,
-      "abs_shap": 0.124,
-      "direction": "increases_risk",
-      "feature_value": 4.0
-    }
-  ]
-}
 ```
 
 ### Other Core Endpoints
