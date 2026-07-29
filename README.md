@@ -14,29 +14,9 @@
 
 ---
 
-## System Architecture
 
-```mermaid
-graph TD
-    A[Synthetic Telco Data Generator (~7,000 Customers)] --> B[Stratified Split & SMOTE Training Sampling]
-    B --> C[XGBoost & Logistic Regression Model Training]
-    C --> D[Artifact Export: churn_model.pkl, scaler.pkl, explainer.pkl]
-    D --> E[FastAPI Engine - Port 8000]
-    E --> F[(SQLite DB: customers & prediction_logs)]
-    E --> G[SHAP TreeExplainer Attribution]
-    E --> H[React Vite Frontend - JULI UI - Port 3000]
-    H --> I[🌸 Welcome Onboarding Page]
-    H --> J[📊 Dashboard Overview]
-    H --> K[📈 Dedicated Risk Analytics & Distribution]
-    H --> L[👥 Customer Retention Directory]
-    H --> M[🔮 Real-time Risk Predictor Sandbox]
-```
 
----
-
-## Tech Stack & Color Palette
-
-### Technology Matrix
+### Technology 
 
 | Layer | Technologies Used |
 | :--- | :--- |
