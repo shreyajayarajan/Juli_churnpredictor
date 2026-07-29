@@ -29,15 +29,7 @@
 | **Containerization** | Docker, Multi-stage Dockerfiles, Docker Compose |
 | **CI / CD** | GitHub Actions (`.github/workflows/ci.yml`), Pytest |
 
-### Custom Brand Color Palette
 
-The **JULI** design system utilizes a harmonious dark aesthetic tailored around the custom color palette:
-
-- **Horizon (`#2F4E67`)**: Primary background canvas atmosphere.
-- **Midnight (`#071322`)**: Deep surface containers, cards, and modal backdrops.
-- **Emerald (`#0D6862`)**: Primary actions, positive retention indicators, and low-risk badges.
-- **Lemon (`#BBBE33`)**: Accent highlights, medium-risk warnings, and callouts.
-- **Lavender (`#9AA0F4`)**: Brand text accents, active navigation tabs, and interactive glows.
 
 ---
 
